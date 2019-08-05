@@ -56,5 +56,7 @@ Debemos abrir otro terminal para entrar al shell de mysql y crear la base de dat
     - Si desea crear archivos semilla
         - ** $ composer dump-autoload
         - ** $ php artisan migrate:refresh --seed
+    - Crear la tabla de autentificacion
+        - ** $ php artisan passport:install
 6) Iniciar el servidor
     - ** $ php artisan serve
