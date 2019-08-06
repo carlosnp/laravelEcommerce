@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Model\Product;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 use App\Http\Requests\ProductRequest;
 use App\Http\Resources\Product\ProductResource;
 use App\Http\Resources\Product\ProductCollection;
@@ -58,7 +59,8 @@ class ProductController extends Controller
         $product->save();
         return response([
             'data' => new ProductResource($product)
-        ], 201);
+        ], Response::HTTP_CREATED);
+        // Para ver las respuestas el archivo esta en: vendor/symfony/http-foundation/Response.php
     }
 
     /**
