@@ -47,7 +47,18 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         // return 'hola ecommerce';
-        return $request->all();
+        // return $request->all();
+        $product = new Product;
+        $product->name = $request->name;
+        $product->detail = $request->description;
+        $product->price = $request->price;
+        $product->stock = $request->stock;
+        $product->discount = $request->discount;
+        // return $product;
+        $product->save();
+        return response([
+            'data' => new ProductResource($product)
+        ], 201);
     }
 
     /**
