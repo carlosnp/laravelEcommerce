@@ -19,7 +19,8 @@ class ReviewResource extends JsonResource
             'body' => $this->review,
             'star' => $this->star,
             'href'          => [
-                'review' => route('review.show', [$this->product_id, $this->id]),
+                'reviewDetail' => route('review.show', [$this->product_id, $this->id]),
+                'ReturnDetailsProduct' => route('products.show', $this->product_id),
             ],
         ];
     }
