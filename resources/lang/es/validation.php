@@ -144,6 +144,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'detail'    => 'Detalle',
+        'discount'  => 'Descuento',
+        'name'      => 'Nombre',
+        'price'     => 'Precio',
+        'stock'     => 'Existencia',
+    ],
 
 ];
