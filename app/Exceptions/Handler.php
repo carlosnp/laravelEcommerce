@@ -49,7 +49,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         if ($exception instanceof ModelNotFoundException) {
-            return response(__('Page not found'), Response::HTTP_NOT_FOUND);
+            return response()->json(__('Page not found'), Response::HTTP_NOT_FOUND);
         }
         // dd($exception);
         return parent::render($request, $exception);
