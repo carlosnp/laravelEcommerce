@@ -50,7 +50,9 @@ class Handler extends ExceptionHandler
     {
         if ($request->expectsJson()) {   
             if ($exception instanceof ModelNotFoundException) {
-                return response()->json(__('Page not found'), Response::HTTP_NOT_FOUND);
+                return response()->json([
+                    "errors" => __("Product not found")
+                ], Response::HTTP_NOT_FOUND);
             }
         }
         // dd($exception);

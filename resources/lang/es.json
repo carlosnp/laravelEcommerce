@@ -28,5 +28,6 @@
     "click here to request another": "pulsa aquí para que te enviemos otro",
     "name": "nombre",
     "The given data was invalid": "Los datos proporcionados no son válidos.",
-    "Page not found": "Página no encontrada"
+    "Page not found": "Página no encontrada",
+    "Product not found" :"Producto no encontrado"
 }
