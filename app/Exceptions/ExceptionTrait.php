@@ -19,18 +19,18 @@ trait ExceptionTrait
         }
     }
 
-    public function isModel($e) {
+    protected function isModel($e) {
         return $e instanceof ModelNotFoundException;
     }
-    public function isHttp($e) {
+    protected function isHttp($e) {
         return $e instanceof NotFoundHttpException;
     }
-    public function ModelResponse($e) {
+    protected function ModelResponse($e) {
         return response()->json([
             "errors" => __("Product not found")
         ], Response::HTTP_NOT_FOUND);
     }
-    public function HttpResponse($e) {
+    protected function HttpResponse($e) {
         return response()->json([
             "errors" => __("Incorect route")
         ], Response::HTTP_NOT_FOUND);
