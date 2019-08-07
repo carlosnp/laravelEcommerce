@@ -29,5 +29,6 @@
     "name": "nombre",
     "The given data was invalid": "Los datos proporcionados no son válidos.",
     "Page not found": "Página no encontrada",
-    "Product not found" :"Producto no encontrado"
+    "Product not found" :"Producto no encontrado",
+    "Incorect route":"Ruta incorrecta"
 }
