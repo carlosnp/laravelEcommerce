@@ -1,5 +1,5 @@
 // 
-import ApiRoute from "../../utils/ApiRoute";
+import ApiRoute from "@/utils/ApiRoute";
 
 export default {
     name: "login",

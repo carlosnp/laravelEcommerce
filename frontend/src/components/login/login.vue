@@ -10,7 +10,7 @@
         Login
       </v-card-title>
       <v-card-text>
-        <v-form>
+        <form>
 
           <v-text-field 
             v-model="user.username" 
@@ -39,7 +39,7 @@
             <v-btn class="grey darken-2 white--text" @click="dialog = false">Close</v-btn>
           </v-card-actions>
 
-        </v-form>
+        </form>
       </v-card-text>
     </v-card>
   </v-dialog>
