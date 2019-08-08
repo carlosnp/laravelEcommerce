@@ -5,7 +5,7 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <login></login>
-
+      <language></language>
     </v-app-bar>
 </template>
 <script src="./navbar.js"></script>

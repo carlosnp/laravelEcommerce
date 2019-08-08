@@ -1,10 +1,12 @@
 // 
 import Login from "../login/login.vue";
+import language from "../../locale/localeTemplate.vue";
 
 export default {
     name: "navbar",
     components: {
-        login: Login
+        login: Login,
+        language: language
     },
     data() {
         return {};
