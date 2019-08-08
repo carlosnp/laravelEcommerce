@@ -36,6 +36,13 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
+        if ($exception instanceof \League\OAuth2\Server\Exception\OAuthServerException) {
+            $transPayload = trans('oauth.' . $exception->getErrorType());
+
+            if (is_array($transPayload)) { // can be remove if you translate all error types!
+                $exception->setPayload($transPayload);
+            }
+        }
         parent::report($exception);
     }
 
